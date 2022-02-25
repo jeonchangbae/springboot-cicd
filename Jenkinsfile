@@ -1,5 +1,5 @@
 pipeline{
-    agent none{    
+    agent any    
     stages {
         stage('build') {
             steps {
@@ -15,7 +15,7 @@ pipeline{
                 sh 'aws s3 cp build/libs/application.war s3://springboot-cicd-jeon/application.war --region us-east-1'
                 }
             }
-        }
+        
         stage('deploy') {
             steps {
                 echo 'deploy done.'
@@ -25,5 +25,6 @@ pipeline{
             }
     }
 }
+
         
     

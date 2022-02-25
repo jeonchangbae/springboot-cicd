@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 pipeline{
     agent none{    
     stages {
@@ -28,28 +27,3 @@ pipeline{
 }
         
     
-=======
-pipeline {
-  agent any
-  stages {
-    stage('build') {
-      steps {
-        echo 'build done'
-      }
-    }
-
-    stage('upload') {
-      steps {
-        echo 'upload done'
-      }
-    }
-
-    stage('deploy') {
-      steps {
-        echo 'deploy done'
-      }
-    }
-
-  }
-}
->>>>>>> 35e6b55e296e04b978841705367b5fc4c67caa94
